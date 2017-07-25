@@ -1,0 +1,108 @@
+.navbar-brand{
+  color: #3e322d !important;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+#section1 {
+  padding-top:50px;
+}
+
+.blockquote{
+  font-style: italic !important;
+  color: #696969;
+}
+/*#subsection1{
+  max-width: 900px;
+  float: left;
+}*/
+
+#section2 {
+  padding-top:50px;
+  height:100%;
+  color: #fff; 
+  background-color: #3e322d;
+}
+#section3 {
+  padding-top:50px;
+  height: 100%;
+  color: #fff;
+  background-color: #293236;
+}
+p{
+  text-align: justify;
+}
+
+#brennand-img{
+  float:right;
+  margin: 0px 10px 10px 10px;
+}
+
+#instituto-img{
+  margin: 0px 15px 10px 10px;
+}
+/*
+.img-responsive{
+
+  padding: 4px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}*/
+/*@media (min-width: 768px) and (max-width: 979px) {
+  #subsection2{
+    min-width: 200px;
+  }
+}*/
+.fade-out {
+  -webkit-transition:opacity .5s ease-out;
+  -moz-transition:opacity .5s ease-out;
+  -ms-transition:opacity .5s ease-out;
+  -o-transition:opacity .5s ease-out;
+  transition:opacity .5s ease-out;
+}
+
+.fade-out:hover {
+  opacity:0.2;
+}
+
+.carousel{
+  margin-bottom: 50px;
+}
+.carousel-inner > .item > img {
+  border-radius: 15px;
+  margin: 0 auto;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+#section3 h2, #submid4 h2{
+  font-size: 50px;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#section4 a{
+  color: #3e322d;
+}
+#section5{
+  background-color: #e1e2e3;
+  color: #333333;
+  padding-bottom: 20px;
+}
+
+.form-control:focus {
+  border-color: #ffffff;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
+}
+#botright{
+  margin-bottom: 50px;
+
+}
+#botright2{
+  top: 2px;
+  text-indent: 60px;
+  color: #696969;
+}

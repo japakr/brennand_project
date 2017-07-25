@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Instituto Ricardo Brennand</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/extra.css">
+		<link rel="icon" href="img/favicon.png">
+		<script type="text/javascript">
+		    function id(el){
+		        return document.getElementById(el);
+		    }
+		    function no_empty(campo){
+		        if(campo.value==''){
+		            alert("Preencha o campo '"+campo.title+"'!");
+		            return 1;
+		        }else{
+		            return 0;
+		        }
+		    }
+		    function print(){
+		        confirm("Mensagem enviada com sucesso!");
+		    }
+		    window.onload = function(){
+		        id('formulario').onsubmit = function(){
+		            var erro = 0;
+		            erro += no_empty(id('nome'));
+		            erro += no_empty(id('email'));
+		            erro += no_empty(id('texto'));
+		            
+		            if(no_empty(id('nome'))!='null' && no_empty(id('email'))!='null' && no_empty(id('texto'))!='null'){
+		                print();
+		            }
+		        }
+		    }
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand fade-out" href="#">Instituto Brennand</a>
+				</div>
+				<div class="collapse navbar-collapse" id="mainNavBar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="fade-out" href="#section1">Home</a></li>
+						<li><a class="fade-out" href="#section2">Sobre o Instituto</a></li>
+						<li><a class="fade-out" href="#section3">Galeria</a></li>
+						<li><a class="fade-out" href="#section4">Fale conosco</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="section1" class="container-fluid">
+		  	<div class="row">
+			  	<h2>Palavras do fundador</h2>
+				<blockquote class="blockquote" class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+					<img src="img/ricardo_brennand.png" class="img-rounded" alt="Dr Ricardo Brennand" id="brennand-img">
+					<p>
+						Na minha vida, meu sucesso como empresário foi, em grande parte, fruto do apoio que sempre recebi da minha gente, dos meus colaboradores e da permanente companhia do meu pai Antônio e do tio Ricardo.<br><br>
+				
+				
+						Assim, para resgatar parte do que de todos recebi, com desapego pelas coisas materiais e coragem indispensável para enfrentar os desafios, pude ver o nascimento desta obra, ao fincar, aqui, em São João da Várzea, terras de João Fernandes Vieira, as bases do Instituto Ricardo Brennand em homenagem ao meu tio.<br><br>
+				
+				
+				   		Deus quis que tivesse ao meu lado, Graça, mulher dedicada, que me deu oito filhos, companheiros do dia-a-dia, solidários com meus sonhos e que serão meus sucessores e responsáveis pela manutenção e conservação deste Patrimônio Cultural de Estudos Brasileiros, em terra do meu Pernambuco.<br><br>
+				
+						Como nos ensina o poeta português...<br>
+						Quando Deus quer, o homem sonha, a obra nasce.<br><br>
+						Um abraço, Ricardo Brennand.
+					</p>
+				</blockquote>
+			</div>
+		</div>
+		<div id="section2" class="container-fluid">	
+		  	<div class="row">
+			  	<div id="subsection1-2" class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<img src="img/instituto.jpg" class="img-responsive img-rounded" alt="Instituto Ricardo Brennand" id="instituto-img">
+				</div>
+			  	<div id="subsection2-2" class="col-sm-8 col-xs-8 col-md-8 col-lg-8">
+			  		<h1>O Instituto</h1>
+				 	<p>
+				  		O Instituto Ricardo Brennand (IRB) é uma instituição cultural brasileira localizada na cidade de Recife, no bairro da Várzea. Fundado em 2002 pelo colecionador e empresário pernambucano Ricardo Brennand, o instituto está sediado em um complexo arquitetônico em estilo medieval, composto por trés prédios: Museu Castelo São João, Pinacoteca, Galeria e a Capela Nossa Senhora das Graças, circundados por um vasto parque.
+				  	</p>
+				  	<p>
+				  		Possui uma coleção permanente de objetos histórico-artísticos de diversas procedências, abrangendo o período que vai da Baixa Idade Média ao século XXI, com forte ênfase na documentação histórica e iconográfica relacionada ao período colonial e ao Brasil Holandês, incluindo a maior coleção do mundo de pinturas de Frans Post, com vinte obras.
+				  	</p>
+			  	</div>
+		  	</div>
+		</div>
+		<div id="section3" class="container-fluid">
+			<div class="row">
+				<div class="col-sm-8 col-xs-8 col-md-8 col-lg-8 col-centered"><h2>Galeria</h2>
+				 	<div id="carousel" class="carousel slide" data-ride="carousel">
+		      			<!-- Indicadores -->
+				    	<ol class="carousel-indicators">
+				        	<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				        	<li data-target="#carousel" data-slide-to="1"></li>
+				        	<li data-target="#carousel" data-slide-to="2"></li>
+				      	</ol>
+
+				      	<!-- Slides -->
+				      	<div class="carousel-inner">
+				        	<div class="item active">
+				          		<img src="img/brn1.jpg" alt="...">
+				        	</div>
+				       		<div class="item">
+				          		<img src="img/brn2.jpg" alt="...">
+				        	</div>
+				        	<div class="item">
+				          		<img src="img/brn3.jpg" alt="...">
+				        	</div>
+				     	 </div>
+
+		      			<!-- Controls -->
+		      			<a class="left carousel-control" href="#carousel" data-slide="prev">
+		        			<span class="glyphicon glyphicon-chevron-left"></span>
+		      			</a>
+		      			<a class="right carousel-control" href="#carousel" data-slide="next">
+		        			<span class="glyphicon glyphicon-chevron-right"></span>
+		      			</a>
+		      		</div>
+	    		</div>
+    		</div>
+  		</div>
+		 		
+		</div>
+		<div id="section4" class="container-fluid">
+		  	<div class="row">
+		  		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"></div>
+		  		<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" id="submid4">
+		  			<h2><a class="fade-out" href="http://www.tourvirtualbrasil.com.br/tour_virtual_ricardo_brennand/ricardo_brennand.html" target="_blank" style="text-decoration:none">Venha fazer um tour virtual!</a></h2>
+		  		</div>
+		  		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"></div>
+		  	</div>
+		</div>
+		<div id="section5" class="container">			
+			<div class="row">
+				<div class="well"><h2>Fale Conosco:</h2></div>
+				<form action="site.html" method="post" id="formulario">
+ 					<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+						<div class="form-group">
+							<label for="nome">Nome:</label>
+							<input name="nome" required="" class="form-control" placeholder="Insira seu nome..." id="nome">
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" required="" class="form-control" placeholder="exemplo@email.com" id="email">
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+						<label for="comment">Mensagem:</label>
+						<textarea class="form-control" required="" rows="5" placeholder="Escreva sua mensagem..." id="texto"></textarea><br>
+						<button type="submit" class="btn btn-default center-block">Enviar</button>
+					</div>
+					<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4" id="botright">
+						<img src="img/menu_faleirb.gif"><br>
+						<strong>Endereço:</strong><br>
+						São João, Várzea / Recife - PE<br> Alameda Antônio Brennand<br> CEP. 50741-904 | Fone: (81) 2121-0352 <br>
+						E-mail: irb@institutoricardobrennand.org.br<br><br>
+						<strong>Horário de Funcionamento:</strong><br>
+						Terça a domingo, das 13:00 às 17:00 h.
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+						<a href="https://www.tripadvisor.com.br/Attraction_Review-g304560-d2302662-Reviews-Instituto_Ricardo_Brennand-Recife_State_of_Pernambuco.html" target="_blank"><img src="img/tripAdvisor.gif"></a><br>
+					</div>
+					<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" id="botright2">
+						Copyright Instituto Ricardo Brennand &copy 2017 - Todos os Direitos Reservados
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+		</script>	
+	</body>
+</html>
